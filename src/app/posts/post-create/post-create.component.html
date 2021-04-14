@@ -1,0 +1,14 @@
+<div class="container"><br><br><br>
+    <h1 style="text-align: center;"><b>Create Post</b></h1>
+    <form>
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" class="form-control" name="title" required [(ngModel)]="post.title">
+        </div>
+        <div class="form-group">
+            <label>Content</label><br>
+            <textarea name="content" class="formcontrol" cols="112" rows="2" required [(ngModel)]="post.content"></textarea>
+        </div>
+        <button type="submit" class="btn btn-secondary" (click)="onAddPost()">Create</button>
+    </form>
+</div>
